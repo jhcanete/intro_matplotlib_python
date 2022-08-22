@@ -35,4 +35,17 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+
+    
+    fig = plt.figure()
+    fig.suptitle('ejercicio_1 ', fontsize=16)
+    ax = fig.add_subplot()
+
+    ax.plot(x, y, c='blue', label='')
+    ax.legend('parabola')
+    ax.grid()
+    plt.show()
+    print("Fin line plot")
+
+
     print("terminamos")

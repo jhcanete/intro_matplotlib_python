@@ -54,4 +54,29 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+
+    fig = plt.figure()
+    fig.suptitle('Ejercicio_4', fontsize=16, label=' ')
+    ax1 = fig.add_subplot(2,2,1)
+    ax2 = fig.add_subplot(2,2,2)
+    ax3 = fig.add_subplot(2,2,3)
+    ax4 = fig.add_subplot(2,2,4)
+
+    ax1.plot(x, y1, c='darkred')
+    ax1.legend('graf1')
+    ax1.grid()
+    
+    ax2.plot(x, y2, c='green')
+    ax2.legend('graf2')
+    ax2.grid()
+    
+    ax3.scatter(x, y3, c='blue')
+    ax3.legend('graf3')
+    ax3.grid()
+
+    ax4 .scatter(x, y4, c='orange')
+    ax4.legend('graf4')
+    ax4.grid()
+    plt.show()
+    
     print("terminamos")
